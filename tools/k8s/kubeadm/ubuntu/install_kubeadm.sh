@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 #Update the system
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl
