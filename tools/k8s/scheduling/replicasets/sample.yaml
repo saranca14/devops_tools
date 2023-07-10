@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: my_web_app
+  labels:
+    app: myapp
+    env: frontend
+spec:
+  containers:
+    - name: myweb_app
+      image: nginx
+
+##replicaset.yaml
+#apiVersion: v1
+#kind: ReplicationController
+#metadata:
+#  name: myapp_rc
+#  labels:
+#    app: myapp
+#    env: frontend
+#spec:
+#  template:
+#    metadata:
+#      name: my_web_app
+#      labels:
+#        app: myapp
+#        env: frontend
+#    spec:
+#      containers:
+#        - name: myweb_app
+#          image: nginx
